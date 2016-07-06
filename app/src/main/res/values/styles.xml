@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/color_primary_two</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark_two</item>
+        <item name="colorAccent">@color/color_accent_two</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="EventDetailTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="EventCustomStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="xyz.aungpyaephyo.joketeller.activities.EventDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="xyz.aungpyaephyo.joketeller.activities.ImageLoadingActivity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/iv_with_async"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:src="@color/color_accent_one"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btn_load_image_async"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Image Async"
+            android:layout_marginTop="@dimen/margin_medium"
+            />
+
+        <ImageView
+            android:id="@+id/iv_with_glide"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:src="@color/color_accent_two"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            />
+
+        <Button
+            android:id="@+id/btn_load_image_glide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Image Glide"
+            android:layout_marginTop="@dimen/margin_medium"
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
